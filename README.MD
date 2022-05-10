@@ -7,3 +7,5 @@ boom Operations Management System
 
 ### Applications
 + app_knowledge_base
++ app_wiki
++ app_cmdb
