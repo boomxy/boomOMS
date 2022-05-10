@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Document{% endblock %}</title>
+    {% block css %} {% endblock%}
+    {% block headjs %}{% endblock %}
+</head>
+<body class="no-skin">
+    {% block navbar %}
+    <div id="navbar">
+        <div class="navbar-container"></div>
+    </div>
+    {% endblock %}
+
+    <div class="main-container">
+		<script> 脚本脚本叫本 </script>
+        {% block sidebar %}
+		<div id="sidebar"></div>
+        {% endblock %}
+
+		<div class="main-content">
+			<div class="main-content-inner">
+				<div class="breadcrumbs">
+                    {% block breadcrumbs %}
+					<ul><li>面包屑</li></ul>
+                    {% endblock %}
+
+                    {% block search %}
+					<div class="nav-search"></div>
+                    {% endblock %}
+				</div>
+
+
+				<div class="page-content">
+                    {% block pageheader %} <div class="page-header"></div> {% endblock %}
+                    {% block alert %}
+                    <div class="alert alert-block alert-success"></div>
+                    {% endblock %}
+
+					<div class="ace-settings-container"></div>
+
+					<div class="row">
+						<div class="col-xs-12">
+                            {% block content %} {% endblock %}
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    {% block footer%}
+    <div class="footer"></div>
+    {% endblock %}
+
+    {% block js%}
+    <script src="src/to/js.js"></script>
+    {% endblock %}
+
+</body>
+</html>
