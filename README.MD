@@ -1,5 +1,6 @@
 ## boomOMS 
 boom Operations Management System
+this is an opensource project
 
 ### Admin user
 + user: admin
